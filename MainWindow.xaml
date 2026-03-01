@@ -32,7 +32,7 @@
         ╚══════════════════════════════════════════════════════════════╝
         -->
 
-        <SolidColorBrush x:Key="BrushOrange"  Color="#FF8200"/>
+        <SolidColorBrush x:Key="BrushOrange"  Color="#007c5d    "/>
         <SolidColorBrush x:Key="BrushTeal"    Color="#00C896"/>
         <SolidColorBrush x:Key="BrushGold"    Color="#FFC100"/>
         <SolidColorBrush x:Key="BrushCard"    Color="#141210"/>
@@ -52,7 +52,7 @@
 
         <!-- Primary button: orange, dark text, brightens toward gold on hover -->
         <Style x:Key="PrimaryButton" TargetType="Button">
-            <Setter Property="Background"       Value="#FF8200"/>
+            <Setter Property="Background"       Value="#007c5d"/>
             <Setter Property="Foreground"       Value="#0A0908"/>
             <Setter Property="BorderThickness"  Value="0"/>
             <Setter Property="FontSize"         Value="13"/>
@@ -167,8 +167,8 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsChecked" Value="True">
-                                <Setter TargetName="Bd" Property="Background"  Value="#1C1000"/>
-                                <Setter TargetName="Bd" Property="BorderBrush" Value="#FF8200"/>
+                                <Setter TargetName="Bd" Property="Background"  Value="#121e1b   "/>
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="#007c5d"/>
                                 <Setter Property="Foreground" Value="#F2EDE8"/>
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="True">
@@ -325,7 +325,7 @@
                                 </Grid.ColumnDefinitions>
                                 <ToggleButton x:Name="FullSepToggle" Grid.Column="0"
                                               Style="{StaticResource ToggleChip}"
-                                              IsChecked="True" Click="SeparationMode_Click">
+                                              IsChecked="True" Click="SeparationMode_Click" Grid.ColumnSpan="2" Margin="0,0,8,0" Height="54" VerticalAlignment="Bottom">
                                     <StackPanel HorizontalAlignment="Center">
                                         <TextBlock Text="Full Separation" FontSize="12"
                                                    FontWeight="SemiBold" HorizontalAlignment="Center"/>
